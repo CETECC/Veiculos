@@ -1,0 +1,21 @@
+TAREFA:
+
+Criar uma solução que me permita trabalhar com qualquer tipo de veículo que exista na Terra.
+
+Tipos primários de Veículos:
+
+1) Terrestre
+	- Carro
+		- Fusca
+		- Fusion
+		- Smart
+	- Moto
+	- Trem
+	- Bicicleta
+	- Trator
+2) Aéreo
+3) Marítmo
+4) Espacial
+
+EU, como motorista, sei dirigir a interface ICarro.
+Assim sendo, eu sei dirigir qualquer Veículo que implemente a interface ICarro.

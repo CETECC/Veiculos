@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Veiculos.Interfaces;
 
@@ -9,47 +10,57 @@ namespace Veiculos.Classes
 {
     public class Fusion : Terrestre, ICarro
     {
-        public string Volante { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int QtdMarchas { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Acelerador { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Freio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Embreagem { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string AlavancaCambio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool Automatico { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Volante { get; set; }
+        public int QtdMarchas { get; set; }
+        public string Acelerador { get; set; }
+        public string Freio { get; set; }
+        public string Embreagem { get; set; }
+        public string AlavancaCambio { get; set; }
+        public bool Automatico { get; set; }
 
         public void Acelerar(float velocidade)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Acelerando o Fusion a {0} Km/h", velocidade);
+            Thread.Sleep(2000);
+            Console.WriteLine("Fusion em {0} Km/h", velocidade);
         }
 
         public void AndarParaFrente()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("O Fusion está andando para frente");
         }
 
         public void AndarParaTras()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("O Fusion está andando para trás");
         }
 
         public void Desacelerar(float velocidade)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Desacelerando o Fusion a {0} Km/h", velocidade);
+            Thread.Sleep(2000);
+            Console.WriteLine("Fusion em {0} Km/h", velocidade);
         }
 
         public void Desligar()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Fusion desligado");
         }
 
         public bool Ligar()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Ligando o Fusion");
+            Thread.Sleep(1000);
+            Console.WriteLine("Fusion ligado");
+
+            return true;
         }
 
         public void Parar()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Parando o Fusion");
+            Thread.Sleep(2000);
+            Console.WriteLine("Fusion parada");
         }
     }
 }
